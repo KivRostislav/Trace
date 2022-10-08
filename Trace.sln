@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trace", "Trace\Trace.csproj", "{7197F7DC-8681-45FB-9069-0C97E6E7F7B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trace.Tests", "Trace.Tests\Trace.Tests.csproj", "{714DD82B-39E0-4C26-8E1F-BF7D6C5C3FA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{7197F7DC-8681-45FB-9069-0C97E6E7F7B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7197F7DC-8681-45FB-9069-0C97E6E7F7B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7197F7DC-8681-45FB-9069-0C97E6E7F7B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{714DD82B-39E0-4C26-8E1F-BF7D6C5C3FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{714DD82B-39E0-4C26-8E1F-BF7D6C5C3FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{714DD82B-39E0-4C26-8E1F-BF7D6C5C3FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{714DD82B-39E0-4C26-8E1F-BF7D6C5C3FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
