@@ -90,6 +90,42 @@ After running this code in the console you will see this
 ```bash
 Hello world!
 ```
+
+### Dependency Injection
+
+If you want to use dependency injection you must install package [Trace.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/).
+
+```bash
+dotnet add package Trace.Extensions.Microsoft.DependencyInjection 
+```
+
+Using this package is very easy.
+
+``` csharp 
+// Program.cs
+using Tutorail;
+using Microsoft.Extensions.DependencyInjection;
+using Trace.Hub;
+using Trace.Listeners;
+
+IServiceCollection services = new ServiceCollection();
+
+// First we need to register all listeners as IEventListener.
+services.AddTransient<IEventListener, CustomEventListener>();
+
+// We configure and register our event hub.
+services.AddDefaultEventHub();
+
+IServiceProvider provider = services.BuildServiceProvider();
+
+// We can get our event hub like this.
+IEventHub hub = provider.GetRequiredService<IEventHub>();
+ 
+// Then everything is the same as in the previous example.
+hub.Publish(new CustomEvent());
+
+Console.ReadLine();
+```
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
