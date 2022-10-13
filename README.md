@@ -103,7 +103,7 @@ Using this package is very easy.
 
 ``` csharp 
 // Program.cs
-using Tutorail;
+using Tutorial;
 using Microsoft.Extensions.DependencyInjection;
 using Trace.Hub;
 using Trace.Listeners;
